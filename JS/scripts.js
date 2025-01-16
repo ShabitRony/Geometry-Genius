@@ -15,5 +15,6 @@ function  calculateTriangleArea(){
 
     const display = document.getElementById('show-calculation');
     display.innerHTML = `The area of the triangle is: ${area}`;
+    // display.innerText = area;
     
 }

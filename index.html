@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <title>Geometry Genius</title>
+</head>
+<body class="m-8">
+   <header>
+    <nav></nav>
+   </header>
+   <main class="m-full">
+    <div class="flex">
+        <!-- Card Section -->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <div class="card bg-base-100 w-96 shadow-xl mb-2">
+                <figure>
+                  <img
+                    src="images/triangle.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body text-center items-center">
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area (A) = 0.5 X b X h</p>
+                  <div class="">
+                    <input id="triangle-base" class="w-24 text-2xl p-2 rounded-sm bg-gray-600" type="text" placeholder="b">
+                    <span class="mr-4 ml-2">cm</span>
+                    <input class="w-24 text-2xl p-2 rounded-sm  bg-gray-600" type="text" name="" id="triangle-height" placeholder="h">
+                    <span>cm</span>
+                </div>
+                  <div class="card-actions w-full">
+                    <button class="btn btn-primary w-full" onclick="calculateTriangleArea()">Calculate</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-96 shadow-xl mb-2">
+                <figure>
+                  <img
+                    src="images/rectangle.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-96 shadow-xl mb-2">
+                <figure>
+                  <img
+                    src="images/parallelogram.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-96 shadow-xl mb-2">
+                <figure>
+                  <img
+                    src="images/rhombus.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-96 shadow-xl">
+                <figure>
+                  <img
+                    src="images/pentagon.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-96 shadow-xl mb-2">
+                <figure>
+                  <img
+                    src="images/ellipse.png"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- Calculation section -->
+        <div   class="w-96 border-2 border-grey">
+            <p class="text-3xl text-center p-4">
+                Calculation
+        </p>
+        <p id="show-calculation" class="text-5xl font-bold items-center"></p>
+        </div>
+    </div>
+   </main>
+
+   <script src="JS/scripts.js"></script>
+</body>
+</html>
